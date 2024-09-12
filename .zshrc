@@ -21,9 +21,9 @@ fi
 
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
-case $- in *i*)
-    [ -z "$TMUX" ] && exec tmux
-esac
+#case $- in *i*)
+#    [ -z "$TMUX" ] && exec tmux
+#esac
 # Add in Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 

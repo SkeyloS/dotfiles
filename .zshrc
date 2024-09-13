@@ -81,6 +81,7 @@ alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
 alias la='ls -a'
+alias vpn='sudo openfortvpn remote.unige.ch -u lherbet1'
 
 # Shell integrations
 eval "$(fzf --zsh)"

@@ -32,7 +32,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
-
+plugins=(ssh-agent git)
 # Add in snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
@@ -49,9 +49,6 @@ zinit cdreplay -q
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-exec ssh-agent zsh
-ssh-add -k ~/.ssh/github
 
 # Keybindings
 bindkey -e
@@ -84,7 +81,7 @@ alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
 alias la='ls -a'
-alias vpn='sudo openfortvpn remote.unige.ch -u lherbet1'
+alias vpn='sudo openfortivpn remote.unige.ch -u lherbet1'
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -130,3 +127,6 @@ eval $(thefuck --alias)
 
 # Created by `pipx` on 2024-07-08 10:21:18
 export PATH="$PATH:/home/nathan/.local/bin"
+
+# exec ssh-agent zsh
+# ssh-add -k ~/.ssh/github

@@ -83,6 +83,7 @@ alias c='clear'
 alias la='ls -a'
 alias vpn='sudo openfortivpn remote.unige.ch -u lherbet1'
 alias f='fuck'
+alias update="yay -Syu && yay -Scc"
 
 # Shell integrations
 eval "$(fzf --zsh)"

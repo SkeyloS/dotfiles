@@ -84,6 +84,7 @@ alias la='ls -a'
 alias vpn='sudo openfortivpn remote.unige.ch -u lherbet1'
 alias f='fuck'
 alias update="yay -Syu && yay -Scc"
+alias gh="exec ssh-agent zsh && ssh-add -k ~/.shh/github"
 
 # Shell integrations
 eval "$(fzf --zsh)"
